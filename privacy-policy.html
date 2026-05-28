@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | DUO GENERIS SOFTWARE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navegación -->
+    <nav class="flex justify-between items-center py-6 px-10 bg-white border-b border-slate-100">
+        <a href="index.html" class="i18n text-sm font-semibold text-slate-500 hover:text-blue-600 flex items-center" data-key="nav_back">
+            <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Volver al inicio
+        </a>
+        <select id="lang-selector" class="bg-slate-100 border-none rounded-lg px-2 py-1 text-xs uppercase cursor-pointer">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+        </select>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 py-12 md:py-20">
+        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-100">
+            
+            <header class="mb-10 border-b border-slate-100 pb-8">
+                <h1 class="i18n text-3xl md:text-4xl font-extrabold text-slate-900 mb-2" data-key="title">Política de Privacidad</h1>
+                <p class="text-blue-600 font-semibold uppercase tracking-wider text-xs">DUO GENERIS SOFTWARE</p>
+            </header>
+
+            <article class="space-y-10 text-slate-600 leading-relaxed">
+                <section>
+                    <p class="i18n" data-key="intro">En <strong>DUO GENERIS SOFTWARE</strong>, valoramos profundamente tu privacidad y la confianza que depositas en nosotros.</p>
+                </section>
+
+                <section>
+                    <h2 class="i18n text-xl font-bold text-slate-900 mb-4 flex items-center" data-key="q1">
+                        <i data-lucide="database" class="w-5 h-5 mr-2 text-blue-600"></i> ¿Qué información recopilamos?
+                    </h2>
+                    <p class="i18n" data-key="a1_p1">Nuestro software no recopila, almacena ni comparte información personal. No realizamos seguimiento de datos, tendencias ni movimientos del usuario.</p>
+                    <p class="i18n mt-4" data-key="a1_p2">Los usuarios pueden enviar reportes de errores de forma voluntaria. Al hacerlo, consienten nuestra política de privacidad, la cual incluye:</p>
+                    <ul class="list-disc ml-6 mt-4 space-y-2 text-slate-600">
+                        <li class="i18n" data-key="list1"><strong>Stacktrace de error:</strong> Información técnica básica (nombre del software, versión y parámetros de uso de recursos).</li>
+                        <li class="i18n" data-key="list2"><strong>Contacto:</strong> Correo electrónico y descripción del problema proporcionados por el usuario.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="i18n text-xl font-bold text-slate-900 mb-4 flex items-center" data-key="q2">
+                        <i data-lucide="shield-check" class="w-5 h-5 mr-2 text-blue-600"></i> ¿Para qué usamos la información?
+                    </h2>
+                    <p class="i18n" data-key="a2">La información técnica recopilada se utiliza exclusivamente para mejorar la estabilidad y funcionalidad del software basándonos en tu retroalimentación.</p>
+                </section>
+
+                <section>
+                    <h2 class="i18n text-xl font-bold text-slate-900 mb-4 flex items-center" data-key="q3">
+                        <i data-lucide="share-2" class="w-5 h-5 mr-2 text-blue-600"></i> ¿Divulgamos información a terceros?
+                    </h2>
+                    <p class="i18n" data-key="a3_p1">No almacenamos, vendemos, intercambiamos ni transferimos información a terceros.</p>
+                    <p class="i18n mt-4" data-key="a3_p2">Si la aplicación permite abrir URLs, estas son gestionadas por el navegador de tu dispositivo. Te recomendamos consultar la política de privacidad de tu navegador web para más detalles.</p>
+                </section>
+
+                <section class="pt-6 border-t border-slate-100">
+                    <h2 class="i18n text-xl font-bold text-slate-900 mb-3" data-key="contact_title">Contacto</h2>
+                    <p class="i18n" data-key="contact_text">Si tienes preguntas o inquietudes respecto a esta política, puedes contactarnos en:</p>
+                    <a href="mailto:duogeneris@gmail.com" class="text-blue-600 font-semibold hover:underline block mt-2">duogeneris@gmail.com</a>
+                </section>
+            </article>
+
+            <footer class="mt-12 pt-8 border-t border-slate-100 text-center text-slate-400 text-sm">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> DUO GENERIS SOFTWARE. <span class="i18n" data-key="footer">Todos los derechos reservados.</span></p>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        const translations = {
+            es: {
+                nav_back: "Volver al inicio", title: "Política de Privacidad",
+                intro: "En <strong>DUO GENERIS SOFTWARE</strong>, valoramos profundamente tu privacidad y la confianza que depositas en nosotros.",
+                q1: "¿Qué información recopilamos?", a1_p1: "Nuestro software no recopila, almacena ni comparte información personal. No realizamos seguimiento de datos, tendencias ni movimientos del usuario.", a1_p2: "Los usuarios pueden enviar reportes de errores de forma voluntaria. Al hacerlo, consienten nuestra política de privacidad, la cual incluye:",
+                list1: "Stacktrace de error: Información técnica básica (nombre del software, versión y parámetros de uso de recursos).", list2: "Contacto: Correo electrónico y descripción del problema proporcionados por el usuario.",
+                q2: "¿Para qué usamos la información?", a2: "La información técnica recopilada se utiliza exclusivamente para mejorar la estabilidad y funcionalidad del software basándonos en tu retroalimentación.",
+                q3: "¿Divulgamos información a terceros?", a3_p1: "No almacenamos, vendemos, intercambiamos ni transferimos información a terceros.", a3_p2: "Si la aplicación permite abrir URLs, estas son gestionadas por el navegador de tu dispositivo. Te recomendamos consultar la política de privacidad de tu navegador web para más detalles.",
+                contact_title: "Contacto", contact_text: "Si tienes preguntas o inquietudes respecto a esta política, puedes contactarnos en:", footer: "Todos los derechos reservados."
+            },
+            en: {
+                nav_back: "Back to Home", title: "Privacy Policy",
+                intro: "At <strong>DUO GENERIS SOFTWARE</strong>, we deeply value your privacy and the trust you place in us.",
+                q1: "What information do we collect?", a1_p1: "Our software does not collect, store, or share personal information. We do not track user data, trends, or movements.", a1_p2: "Users may voluntarily send error reports. By doing so, they consent to our privacy policy, which includes:",
+                list1: "Error stacktrace: Basic technical information (software name, version, and resource usage parameters).", list2: "Contact: Email and problem description provided by the user.",
+                q2: "How do we use the information?", a2: "The collected technical information is used exclusively to improve software stability and functionality based on your feedback.",
+                q3: "Do we disclose information to third parties?", a3_p1: "We do not store, sell, trade, or transfer information to third parties.", a3_p2: "If the application allows opening URLs, these are managed by your device's browser. We recommend consulting your browser's privacy policy for more details.",
+                contact_title: "Contact", contact_text: "If you have any questions or concerns regarding this policy, you can contact us at:", footer: "All rights reserved."
+            }
+        };
+
+        function translate(lang) {
+            document.querySelectorAll('.i18n').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (translations[lang][key]) el.innerHTML = translations[lang][key];
+            });
+            document.documentElement.lang = lang;
+            localStorage.setItem('lang', lang);
+            document.getElementById('lang-selector').value = lang;
+        }
+
+        const browserLang = navigator.language.startsWith('es') ? 'es' : 'en';
+        const savedLang = localStorage.getItem('lang') || browserLang;
+
+        translate(savedLang);
+
+        document.getElementById('lang-selector').addEventListener('change', (e) => translate(e.target.value));
+        lucide.createIcons();
+    </script>
+</body>
+</html>
